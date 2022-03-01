@@ -24,9 +24,10 @@ pub mod lib {
         // us, Rust supports destructuring function arguments.  Try replacing "z" in
         // the parameter list above with "(x, y)" and then adjust the function
         // body to use x and y.
+        let (x, y) = z;
         println!(
             "Distance to the origin is {}",
-            ( z.0.powf(2.0) + z.1.powf(2.0) ).sqrt());
+            ( x.powf(2.0) + y.powf(2.0) ).sqrt());
     }
 
 }
